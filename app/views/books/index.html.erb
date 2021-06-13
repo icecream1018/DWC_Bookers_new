@@ -42,7 +42,7 @@
 </ul>
 <% end %>
 
-<%= form_for(@book) do |f| %>
+<%= form_with model:@book, url:books_path, local:true do |f| %>
 
 <div class="field">
     <label>Title</label><br>
